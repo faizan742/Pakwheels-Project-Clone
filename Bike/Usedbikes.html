@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+</head>
+
+<body>
+    <style>
+        .navbar {
+            padding: 20px 30px 20px 20px;
+            overflow: hidden;
+            background-color: #333;
+            font-family: Arial;
+        }
+        
+        .navbar a {
+            float: left;
+            font-size: 16px;
+            color: white;
+            text-align: center;
+            padding: 35px 30px;
+            text-decoration: none;
+        }
+        
+        .dropdown {
+            float: left;
+            overflow: hidden;
+            padding: 20px 20px;
+        }
+        
+        .dropdown .dropbtn {
+            font-size: 16px;
+            border: none;
+            outline: none;
+            color: white;
+            padding: 14px 16px;
+            background-color: inherit;
+            font-family: inherit;
+            margin: 0;
+        }
+        
+        .navbar a:hover,
+        .dropdown:hover .dropbtn {
+            background-color: red;
+        }
+        
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
+        
+        .dropdown-content a {
+            float: none;
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+        
+        .dropdown-content a:hover {
+            background-color: #ddd;
+        }
+        
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+        
+        .p {
+            font-size: 10px;
+        }
+        
+        .search-main-head {
+            padding: 50px 0px 90px;
+            background-color: #223c7a;
+        }
+        
+        .wrapper {
+            margin-left: 175px;
+            display: grid;
+            place-items: center;
+            min-height: 30vh;
+        }
+        
+        .grid-container {
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 1fr;
+            grid-column-gap: 0px;
+            width: 60vw;
+            height: 150px;
+        }
+        
+        .left {
+            background-color: white;
+            grid-column: 1;
+            border-top-left-radius: 10px;
+            border-bottom-left-radius: 10px;
+        }
+        
+        .middle {
+            background-color: white;
+            grid-column: 2;
+        }
+        
+        .right {
+            background-color: white;
+            grid-column: 3;
+            border-top-right-radius: 10px;
+            border-bottom-right-radius: 10px;
+        }
+        
+        .wrapper1 {
+            display: grid;
+            place-items: center;
+            min-height: 100vh;
+        }
+        
+        .grid-container1 {
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 1fr;
+            grid-column-gap: 0px;
+            width: 60vw;
+            height: 450px;
+        }
+        
+        .left1 {
+            background-color: white;
+            grid-column: 1;
+            border-top-left-radius: 10px;
+            border-bottom-left-radius: 10px;
+        }
+        
+        .middle1 {
+            background-color: white;
+            grid-column: 2;
+        }
+        
+        .right1 {
+            background-color: white;
+            grid-column: 3;
+            border-top-right-radius: 10px;
+            border-bottom-right-radius: 10px;
+        }
+        
+        .footer {
+            background: #23292f;
+            border-top: 2px solid #181c20;
+            color: #fff;
+            padding: 30px 0 10px;
+            font-size: 12px;
+            line-height: 20px;
+            text-align: center;
+        }
+    </style>
+    <div class="navbar">
+        <div class="dropdown">
+            <button class="dropbtn">Used Cars
+      <i class="fa fa-caret-down"></i>
+    </button>
+            <div class="dropdown-content">
+                <a href="#">Find Used Cars for Sale
+      	<p style="font-size: 10px;">Search from 110k options</p>
+      </a>
+                <a href="#">Featured Used Cars
+      	<p style="font-size: 10px;">View Featured Cars by PakWheels</p>
+      </a>
+                <a href="#">Sell your Car
+      <p style="font-size: 10px;"> Post a free ad and sell your car quickly</p>
+  	  </a>
+                <a href="#">Used Car Dealers
+      <p style="font-size: 10px;">Find used car dealers near you</p>
+  	  </a>
+                <a href="#">Price Calculator
+      <p style="font-size: 10px;">Calculate the market price of cars</p>
+      </a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <button class="dropbtn">New Cars
+      <i class="fa fa-caret-down"></i>
+    </button>
+            <div class="dropdown-content">
+                <a href="#">Find New Cars
+      <p style="font-size: 10px;">See new cars</p>
+  	  </a>
+                <a href="#">Car Comparisons
+      <p style="font-size: 10px;">Compare cars and find their differences</p>
+      </a>
+                <a href="#">Reviews
+      <p style="font-size: 10px;">Read reviews of all cars in Pakistan</p>
+      </a>
+                <a href="#">Prices
+      <p style="font-size: 10px;">See prices of new cars</p>
+      </a>
+                <a href="#">On Road Side
+      <p style="font-size: 10px;">Calculate the total cost of new cars</p>
+      </a>
+                <a href="#">New Car Dealers
+      <p style="font-size: 10px;">Find new car dealers</p>
+      </a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <button class="dropbtn">Bikes
+      <i class="fa fa-caret-down"></i>
+    </button>
+            <div class="dropdown-content">
+                <a href="#">Find Used Bikes
+      <p style="font-size: 10px;">Find your dream bike</p>
+      </a>
+                <a href="#">Used Bikes Listings
+      <p style="font-size: 10px;">Search from 5000+ options</p>
+      </a>
+                <a href="#">Featured Used Bikes
+      <p style="font-size: 10px;">Browse our featured bikes</p>
+      </a>
+                <a href="#">Sell Your Bike
+      <p style="font-size: 10px;">Post a free ad and sell your bike quickly</p>
+      </a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <button class="dropbtn">Auto Store
+      <i class="fa fa-caret-down"></i>
+    </button>
+            <div class="dropdown-content">
+                <a href="#">PakWheels Autostore
+      <p style="font-size: 10px;">Buy Auto Parts & Accessories directly from PakWheels</p>
+      </a>
+                <a href="#">Find Auto Parts
+      <p style="font-size: 10px;">Find auto parts for your car</p>
+      </a>
+                <a href="#">Sell Car Parts
+      <p style="font-size: 10px;">Post a free ad and sell your car parts quickly</p>
+      </a>
+            </div>
+        </div>
+        <a href="#videos">Videos</a>
+        <a href="#forums">Forums</a>
+        <a href="#blog">Blog</a>
+        <div class="dropdown">
+            <button class="dropbtn">More
+      <i class="fa fa-caret-down"></i>
+    </button>
+            <div class="dropdown-content">
+                <a href="#">Cool Rides
+      <p style="font-size: 10px;">Member Rides Car and Bikes</p>
+      </a>
+                <a href="#">Car Import
+      <p style="font-size: 10px;">Import your favorite Car</p>
+      </a>
+                <a href="#">Car Insurance
+      <p style="font-size: 10px;">Get car insurance quote</p>
+      </a>
+                <a href="#">PakWheels Autostore
+      <p style="font-size: 10px;">Compare plans and apply for car loan</p>
+      </a>
+                <a href="#">MTMIS Pakistan
+      <p style="font-size: 10px;">Online Vehicle Verification</p>
+      </a>
+                <a href="#">DLIMS Pakistan
+      <p style="font-size: 10px;">Driving License Verification System</p>
+      </a>
+                </a>
+                <a href="#">Current Fuel Prices
+      <p style="font-size: 10px;">Check latest Petrol, Diesel and CNG Price</p>
+      </a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <button style="background-color: red;" class="dropbtn">Post an Ad
+      <i class="fa fa-caret-down"></i>
+    </button>
+            <div class="dropdown-content">
+                <a href="#">Sell Your Car
+      </a>
+                <a href="#">Sell Your Bike
+      </a>
+                <a href="#">Sell Accessory
+      </a>
+            </div>
+        </div>
+    </div>
+    <section class="search-main-outer">
+        <div id="top-search-heading" class="search-main-head">
+            <div class="container">
+                <center>
+                    <h1 style="color: white;"> Find Used Bikes &amp; Motorcycles in Pakistan </h1>
+                </center>
+                <center>
+                    <p style="color: white;">Used Honda, Suzuki, Yamaha &amp; More </p>
+                </center>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="wrapper">
+
+            <div class="grid-container">
+                <div class="left">
+                    <img height="50" src="https://wsa3.pakwheels.com/assets/sell-icons/free-ad-f96cd2bca76dd9ff86db6cc77bf17fce.svg" style="margin: 5px 0;" alt="bikes" class="logo">
+                    <h2 class="text-title">Free Ad</h2>
+                    <div class="main-text">
+                        Fill in your bike details and post an ad on PakWheels
+                    </div>
+                </div>
+
+                <div class="middle">
+                    <img height="60" src="https://wsa3.pakwheels.com/assets/sell-icons/gen-buyer-94064af3a9ac69f1d4060872e7aa3015.svg" alt="bikes" class="logo">
+                    <h2 class="text-title">Genuine Buyers</h2>
+                    <div class="main-text">
+                        Interested buyers start contacting you instantly!
+                    </div>
+                </div>
+
+                <div class="right">
+                    <img height="54" src="https://wsa4.pakwheels.com/assets/bike-icon-0fe83063a27027927916ae4bfca1bf20.svg" style="margin: 3px 0;" alt="bikes" class="logo">
+                    <h2 class="text-title">Sell faster</h2>
+                    <div class="main-text">
+                        Choose the best offer and finalize the deal
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="wrapper1">
+            <h2>Featured Used Bikes for Sale</h2>
+            <div class="grid-container1">
+                <div class="left1">
+                    <a href=""><img height="180" src="https://cache4.pakwheels.com/ad_pictures/6863/Slide_harley-davidson-road-glide-2016-68630600.jpg" style="margin: 5px 0; padding: 5px 5px 5px 10px;" alt="bikes" class="logo"></a>
+                    <a href="">
+                        <h2 class="text-title">Harley Davidson Road Glide 2016</h2>
+                    </a>
+                    <div class="main-text">
+                        <p style="color: blue; font-size: 15px;">PKR 2,95,000</p>
+                    </div>
+                </div>
+
+                <div class="middle1">
+                    <a href="#"><img height="180" src="https://cache2.pakwheels.com/ad_pictures/6879/Slide_hi-speed-infinity-150-2022-68798097.jpg" style="padding: 10px 5px 5px 10px;" alt="bikes" class="logo"></a>
+                    <a href="#">
+                        <h2 class="text-title">Hi Speed Infinity 150 2022</h2>
+                    </a>
+                    <div class="main-text">
+                        <p style="color: green; font-size: 15px;">PKR 2,95,000</p>
+                    </div>
+                </div>
+
+                <div class="right1">
+                    <a href="#"><img height="180" src="https://cache1.pakwheels.com/ad_pictures/6879/Slide_hi-speed-infinity-150-2022-68797974.jpg" style="margin: 3px 0; padding: 5px 5px 5px 10px;" alt="bikes" class="logo"></a>
+                    <a href="#">
+                        <h2 class="text-title">Hi Speed Infinity 150 2022</h2>
+                    </a>
+                    <div class="main-text">
+                        <p style="color: green; font-size: 15px;">PKR 6,000,000</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section style="background-color: lightgray;">
+        <div class="wrapper1">
+            <h2>Popular Used Bikes</h2>
+            <div class="grid-container1">
+                <div class="left1">
+                    <a href=""><img height="180" src="https://wsa2.pakwheels.com/assets/top-model-pictures/bikes/cg-125--2-c901d0f73684cb85461a6023532fb648.png" style="margin: 5px 0; padding: 5px 5px 5px 10px;" alt="bikes" class="logo"></a>
+                    <a href="">
+                        <h2 class="text-title">Honda CG 125</h2>
+                    </a>
+                    <div class="main-text">
+                        <p style="color: green; font-size: 15px;">1,037 Bikes Listed</p>
+                    </div>
+                </div>
+
+                <div class="middle1">
+                    <a href="#"><img height="180" src="https://wsa4.pakwheels.com/assets/top-model-pictures/bikes/cd-70--3-44f341d26fc822789ae206bf1d47cc07.png" style="padding: 10px 5px 5px 10px;" alt="bikes" class="logo"></a>
+                    <a href="#">
+                        <h2 class="text-title">Honda CD 70</h2>
+                    </a>
+                    <div class="main-text">
+                        <p style="color: green; font-size: 15px;">397 Bikes Listed</p>
+                    </div>
+                </div>
+
+                <div class="right1">
+                    <a href="#"><img height="180" src="https://wsa2.pakwheels.com/assets/top-model-pictures/bikes/ybr-125-fff63691cf2ffc49c00ffe9281cb40d9.png" style="margin: 3px 0; padding: 5px 5px 5px 10px;" alt="bikes" class="logo"></a>
+                    <a href="#">
+                        <h2 class="text-title">Yamaha YBR 125</h2>
+                    </a>
+                    <div class="main-text">
+                        <p style="color: green; font-size: 15px;">193 Bikes Listed</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="footer">
+            <p style="font-size: 10px;">
+                Copyright © 2003 - 2022 PakWheels (Pvt) Ltd. - All Rights Reserved.</p>
+            <a href="#">
+                <p style="font-size: 10px; color: white;">Terms of Service</p>
+            </a>
+            <a href="#">
+                <p style="font-size: 10px; color: white;">Privacy Policy</p>
+            </a>
+            <p style="font-size: 10px;">
+                Reproduction of material from any PakWheels.com pages without permission is strictly prohibited.
+            </p>
+        </div>
+    </section>
+</body>
+
+</html>

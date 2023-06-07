@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Swiper demo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+    <!-- Demo styles -->
+    <style>
+        html,
+        body {
+            position: relative;
+            height: 100%;
+        }
+        
+        body {
+            background: #eee;
+            font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+            font-size: 14px;
+            color: #000;
+            margin: 0;
+            padding: 0;
+        }
+        
+        .card {
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            transition: 0.3s;
+            border-radius: 20%;
+            justify-items: center;
+            margin: 20px;
+            height: 100px;
+        }
+        
+        .card:hover {
+            box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+            font-weight: 900;
+        }
+        
+        .container {
+            padding: 2px 16px;
+            margin: 2.5px;
+            height: 140px;
+            font-size: x-small;
+        }
+        
+        .swiper {
+            width: 1000px;
+        }
+        
+        .swiper-slide {
+            text-align: center;
+            font-size: 18px;
+            margin: 0%;
+            /* Center slide text vertically */
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            -webkit-justify-content: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            -webkit-align-items: center;
+            align-items: center;
+        }
+        
+        .swiper-slide img {
+            display: block;
+            width: 50%;
+            height: 50%;
+            object-fit: cover;
+            margin: 0%;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Swiper -->
+    <div style="width: 100%; height: 200%; background-color: #f2f3f3; padding-top:50px ;">
+
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+
+                <div class="swiper-slide">
+                    <div class="card" style="width: 18rem;">
+                        <div>
+                            <img src="ImagesOfProject\car2.svg" alt="Avatar" style="width:70px; height: 50px; padding-left: 5px;">
+                        </div>
+                        <div class="container">
+                            <p>Automatic cars</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="card">
+                        <a href="family car page/first.html" target="_blank" rel="noopener noreferrer" style="text-decoration: none; color: #000;">
+                            <div>
+                                <img src="ImagesOfProject\car3.svg" alt="Avatar" style="width:70px; height: 50px; padding-left: 5px;">
+                            </div>
+                            <div class="container">
+                                <p>Family Car </p>
+                            </div>
+                    </div>
+                    </a>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="card">
+                        <div>
+                            <img src="ImagesOfProject\car4.svg" alt="Avatar" style="width:70px; height: 50px; padding-left: 5px;">
+                        </div>
+                        <div class="container">
+                            <p>Old Cars </p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="swiper-slide">
+                    <div class="card">
+                        <div>
+                            <img src="ImagesOfProject\car5.svg" alt="Avatar" style="width:70px; height: 50px; padding-left: 5px;">
+                        </div>
+                        <div class="container">
+                            <p>Imported Cars </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="card">
+                        <div>
+                            <img src="ImagesOfProject\car6.svg" alt="Avatar" style="width:70px; height: 50px; padding-left: 5px;">
+                        </div>
+                        <div class="container">
+                            <p>Big Cars </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="card">
+                        <div>
+                            <img src="ImagesOfProject\car7.svg" alt="Avatar" style="width:70px; height: 50px; padding-left: 5px;">
+                        </div>
+                        <div class="container">
+                            <p>1300cc cars </p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="swiper-slide">
+                    <div class="card">
+                        <div>
+                            <img src="ImagesOfProject\car8.svg" alt="Avatar" style="width:70px; height: 50px; padding-left: 5px;">
+                        </div>
+                        <div class="container">
+                            <p>1000cc cars </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="card">
+                        <div>
+                            <img src="ImagesOfProject\car9.svg" alt="Avatar" style="width:70px; height: 50px; padding-left: 5px;">
+                        </div>
+                        <div class="container">
+                            <p>Low Price cars </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="card">
+                        <div>
+                            <img src="ImagesOfProject\car10.svg" alt="Avatar" style="width:70px; height: 50px; padding-left: 5px;">
+                        </div>
+                        <div class="container">
+                            <p>Low Mileage cars </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="card">
+                        <div>
+                            <img src="ImagesOfProject\car11.svg" alt="Avatar" style="width:70px; height: 50px; padding-left: 5px;">
+                        </div>
+                        <div class="container">
+                            <p>Janpenese cars </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="card">
+                        <div>
+                            <img src="ImagesOfProject\car12.svg" alt="Avatar" style="width:70px; height: 50px; padding-left: 5px;">
+                        </div>
+                        <div class="container">
+                            <p>Jeep </p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="swiper-slide">
+                    <div class="card">
+                        <div>
+                            <img src="ImagesOfProject\car13.svg" alt="Avatar" style="width:70px; height: 50px; padding-left: 5px;">
+                        </div>
+                        <div class="container">
+                            <p>660cc cars </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="card">
+                        <div>
+                            <img src="ImagesOfProject\car14.svg" alt="Avatar" style="width:70px; height: 50px; padding-left: 5px;">
+                        </div>
+                        <div class="container">
+                            <p>Cheap cars </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="card">
+                        <div>
+                            <img src="ImagesOfProject\car15.svg" alt="Avatar" style="width:70px; height: 50px; padding-left: 5px;">
+                        </div>
+                        <div class="container">
+                            <p>Diesel Cars </p>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class="swiper-slide">
+                    <div class="card">
+                        <div>
+                            <img src="ImagesOfProject\car16.svg" alt="Avatar" style="width:70px; height: 50px; padding-left: 5px;">
+                        </div>
+                        <div class="container">
+                            <p>Carry Daba </p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="swiper-slide">
+                    <div class="card">
+                        <div>
+                            <img src="ImagesOfProject\car17.svg" alt="Avatar" style="width:70px; height: 50px; padding-left: 5px;">
+                        </div>
+                        <div class="container">
+                            <p>Hybrid cars</p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="swiper-slide">
+                    <div class="card">
+                        <a href="sports car/first.html" target="_blank" rel="noopener noreferrer" style="text-decoration: none; color: #000;">
+                            <div>
+                                <img src="ImagesOfProject\car18.svg" alt="Avatar" style="width:70px; height: 50px; padding-left: 5px;">
+                            </div>
+                            <div class="container">
+                                <p>Sports cars </p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+
+                <div class="swiper-slide">
+                    <div class="card">
+                        <div>
+                            <img src="ImagesOfProject\car19.svg" alt="Avatar" style="width:70px; height: 50px; padding-left: 5px;">
+                        </div>
+                        <div class="container">
+                            <p>Modified cars </p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="swiper-slide">
+                    <div class="card">
+                        <div>
+                            <img src="ImagesOfProject\car20.svg" alt="Avatar" style="width:70px; height: 50px; padding-left: 5px;">
+                        </div>
+                        <div class="container">
+                            <p>Customer Auction </p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="swiper-slide">
+                    <div class="card">
+                        <div>
+                            <img src="ImagesOfProject\car21.svg" alt="Avatar" style="width:70px; height: 50px; padding-left: 5px;">
+                        </div>
+                        <div class="container">
+                            <p>Duplicate Books Cars </p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="swiper-slide">
+                    <div class="card">
+                        <div>
+                            <img src="ImagesOfProject\car22.svg" alt="Avatar" style="width:70px; height: 50px; padding-left: 5px;">
+                        </div>
+                        <div class="container">
+                            <p>Duplicate File </p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="swiper-slide">
+                    <div class="card">
+                        <div>
+                            <img src="ImagesOfProject\car23.svg" alt="Avatar" style="width:70px; height: 50px; padding-left: 5px;">
+                        </div>
+                        <div class="container">
+                            <p>Electric cars </p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="swiper-slide">
+                    <div class="card">
+                        <div>
+                            <img src="ImagesOfProject\car24.svg" alt="Avatar" style="width:70px; height: 50px; padding-left: 5px;">
+                        </div>
+                        <div class="container">
+                            <p>Amnesty Scheme</p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="swiper-slide">
+                    <div class="card">
+                        <div>
+                            <img src="ImagesOfProject\car25.svg" alt="Avatar" style="width:70px; height: 50px; padding-left: 5px;">
+                        </div>
+                        <div class="container">
+                            <p>Architect </p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="swiper-slide">
+                    <div class="card">
+                        <div>
+                            <img src="ImagesOfProject\car26.svg" alt="Avatar" style="width:70px; height: 50px; padding-left: 5px;">
+                        </div>
+                        <div class="container">
+                            <p>Army Auction jeeps </p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="swiper-slide">
+                    <div class="card">
+                        <div>
+                            <img src="ImagesOfProject\car27.svg" alt="Avatar" style="width:70px; height: 50px; padding-left: 5px;">
+                        </div>
+                        <div class="container">
+                            <p>Urgent </p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="swiper-slide">
+                    <div class="card">
+                        <div>
+                            <img src="ImagesOfProject\car28.svg" alt="Avatar" style="width:70px; height: 50px; padding-left: 20px;">
+                        </div>
+                        <div class="container">
+                            <p>Duplicate Number Plates </p>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class="swiper-slide">
+                    <div class="card">
+                        <div>
+                            <img src="ImagesOfProject\car29.svg" alt="Avatar" style="width:70px; height: 50px; padding-left: 20px;">
+                        </div>
+                        <div class="container">
+                            <p>Police Auction </p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="swiper-slide">
+                    <div class="card">
+                        <div>
+                            <img src="ImagesOfProject\car30.svg" alt="Avatar" style="width:70px; height: 50px; padding-left: 5px;">
+                        </div>
+                        <div class="container">
+                            <p>Bank Auction</p>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+
+
+
+
+
+
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </div>
+
+
+
+
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 7,
+            spaceBetween: 30,
+            slidesPerGroup: 3,
+            loop: false,
+            loopFillGroupWithBlank: true,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
+    </script>
+</body>
+
+</html>
